@@ -1,0 +1,35 @@
+        body {
+            width: auto;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        .nav_menu {
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        /*dropdown menu */
+
+        .nav_menu .dropmenu {
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+
+        .dropmenu li {
+            background-color: black;
+        }
+
+        .dropmenu li a {
+            margin: 0;
+            padding: 10px 30px;
+            color: white;
+        }
