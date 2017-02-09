@@ -1,0 +1,68 @@
+header, article {
+    display: block;
+}
+
+div, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 0 25px 0;
+    font-family: "Helvetica Neue", Georgia, Serif;
+    font-size: 100%;
+    background-color: #d9d9d9;
+}
+
+h1 {
+    color: white;
+    background-color: grey;
+    padding: 18px 25px;
+}
+
+article {
+    background-color: white;
+    padding: 18px 25px;
+    color: black;
+}
+
+h2 {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+p {
+    padding: 10px 0;
+}
+
+.box-top {
+    background-color: rgb(100, 98, 102);
+}
+
+img {
+    padding: 4px;
+    margin: 4px;
+    border: 2px solid white;
+    background-color: rgb(100, 98, 102);
+}
+
+.box-bottom {
+    border: 1px solid black;
+}
+
+.box-bottom h2 {
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+}
+
+.box-bottom p {
+    padding: 10px;
+}
