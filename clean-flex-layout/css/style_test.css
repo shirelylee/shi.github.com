@@ -1,0 +1,87 @@
+html, body, div {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* order version browsier*/
+
+article, header, footer {
+    display: block;
+}
+
+
+/* end */
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #859EBD;
+    width: 100%;
+}
+
+.logo {
+    color: #FFA3A9;
+    font-family: Comic sans MS;
+    font-size: 34px;
+}
+
+.nav {
+    padding: 0 0 10px 25px;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+}
+
+.nav a {
+    -webkit-flex: 1;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+}
+
+article {
+    width: 100%;
+    height: 680px;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+}
+
+article div {
+    -webkit-flex-grow: 0;
+    /* Safari 6.1+ */
+    -webkit-flex-shrink: 0;
+    /* Safari 6.1+ */
+    -webkit-flex-basis: 30%;
+    /* Safari 6.1+ */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 30%;
+}
+
+article div:nth-of-type(2) {
+    -webkit-flex-basis: 40%;
+    /* Safari 6.1+ */
+    flex-basis: 40%;
+}
+
+.AsideLeft {
+    background-color: black;
+}
+
+.center {
+    background-color: orange;
+}
+
+.AsideRight {
+    background-color: #FFDDBA;
+}
+
+footer {
+    height: 37px;
+    background-color: grey;
+}
