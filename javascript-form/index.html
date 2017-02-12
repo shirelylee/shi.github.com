@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>javascript-form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- for order browser -->
+    <script type="text/javascript" src="modernizr-custom.js">
+    </script>
+    <!-- order browser end -->
+</head>
+
+<body>
+    <form id="form" name="form" action="index.html" method="post">
+        <span id="errortop"></span>
+        <fieldset id="login_info">
+            <ol>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Last,First" />
+                    <span id="namehint"></span>
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="...@.." />
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="UpperCase, LowerCase, Number/SpecialChar and min 8 Chars" />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset id="other_info">
+
+            <ol>
+                <li>
+                    <label for="website">Website</label>
+                    <input type="url" name="website" id="website" placeholder="http://..." />
+                    <span id="error"></span>
+                </li>
+                <li>
+                    <label for="telephone">Telephone</label>
+                    <input type="phone" name="telephone" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx" />
+
+                </li>
+                <li>
+                    <input type="checkbox" name="list" id="list" />
+                    <label for="list">Subscribe to our mailing list?</label>
+                </li>
+                <li>
+                    <label for="reference">How did you hear about us?</label>
+                    <select class="reference" name="reference" id="reference">
+                  <option value="none">Choose..</option>
+                  <option value="friend">A friend</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="twitter">Twitter</option>
+                </select>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset id="comments">
+            <ol>
+                <li>
+                    <label for="request">Request Type</label>
+                    <input type="radio" name="request" value="Question">Question
+                    <input type="radio" name="request" value="Comment">Comment
+                </li>
+                <br>
+                <li>
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" rows="8" cols="80"></textarea>
+                </li>
+            </ol>
+            <button type="submit">Send >></button>
+
+        </fieldset>
+    </form>
+    <script type="text/javascript" src="form.js">
+    </script>
+</body>
+
+</html>
