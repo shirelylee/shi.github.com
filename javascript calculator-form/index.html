@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS Calculator-form</title>
+
+</head>
+
+<body>
+
+    <form id="calculator" action="index.html" method="post">
+        <fieldset>
+            <h3>Basketball:</h3>
+            <p>Price:30$/each</p>
+            Quanity Desired
+            <input type="number" name="bb" id="basketball" min="0" max="3">
+        </fieldset>
+        <fieldset>
+            <h3>football:</h3>
+            <p>Price:50$/each</p>
+            Quanity Desired
+            <input type="number" name="fb" id="football" min="0" max="3">
+        </fieldset>
+        <fieldset>
+            <h3>State Required</h3>
+            <select id="state">
+              <option value="">--Choose--</option>
+            <option value="1.088">New York</option>
+            <option value="1.075">New Jersery(tax0.075)</option>
+            <option value="1.083">California</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <h3>Shipping and Handling</h3>
+            <input type="radio" name="deliver" value="0" />Pick Up(free)<br />
+            <input type="radio" name="deliver" value="2" />Us Mail($2/item)<br />
+        </fieldset>
+        <label for="total">Click to estimate:</label>
+        <input type="submit" name="submit" id="result">
+        <input type="text" name="show-result" id="cost" placeholder="0.00">
+    </form>
+
+    <script type="text/javascript" src="index.js">
+    </script>
+</body>
+
+</html>
