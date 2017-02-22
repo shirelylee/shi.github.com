@@ -1,0 +1,18 @@
+{
+   "paintings":{
+    "painting":[
+      {
+        "title":"asdawd 5",
+        "artist":"asda asd",
+        "image":"1.jpg",
+        "price":700
+      },
+      {
+        "title":"dfhgfhg",
+        "artist":"dfhh dfghf",
+        "image":"2.jpg",
+        "price":900
+      }
+    ]
+  }
+}

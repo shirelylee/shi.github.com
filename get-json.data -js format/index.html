@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>json-test</title>
+    <script type="text/javascript" src="jquery-3.1.1.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.ajax({
+                type: 'GET',
+                url: 'data.json',
+                dataType: 'json',
+                success: jsonParser
+            });
+        });
+
+        function jsonParser(json) {
+            $('#load').fadeOut();
+            $.getJSON('data.json', function(data) {
+                $.each(data.paintings.painting, function(m, n) {
+                    var title = n.title;
+                    var img = n.image;
+                    var price = n.price;
+                    $('#container').append('<div class="painting"><img src="image/' + img + '" width="200" height="225" alt="' + title + '" /><br/><div class="title">' + title + '<br/>$' + price + '</div></div>')
+                });
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+
+        <img src="image/loading.gif" alt="loading" id="load" width="400" height="400">
+
+    </div>
+</body>
+
+</html>
